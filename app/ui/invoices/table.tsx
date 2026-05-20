@@ -10,8 +10,10 @@ export default async function InvoicesTable({
 }: {
   query: string;
   currentPage: number;
-}) {
+  }) {
+  console.log(query);
   const invoices = await fetchFilteredInvoices(query, currentPage);
+  console.log(invoices);
 
   return (
     <div className="mt-6 flow-root">
