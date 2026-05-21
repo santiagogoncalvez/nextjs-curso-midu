@@ -3,10 +3,13 @@
 // ↑ Marcar que todas las funciones que se exportan en este archivo son de servidor y por lo tanto no se ejecuta ni se envían al cliente.
 
 import { z } from "zod";
-import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import postgres from "postgres";
 // import { Invoice } from "./definitions";
+
+
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
 const CreateInvoiceSchema = z.object({
    id: z.string(),
