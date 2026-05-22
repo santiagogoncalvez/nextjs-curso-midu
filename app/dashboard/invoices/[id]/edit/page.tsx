@@ -25,5 +25,5 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
          />
          <Form invoice={invoice} customers={customers} />
       </main>
-   );
+   ); 
 }
