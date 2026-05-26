@@ -16,7 +16,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
    const initialState: State = { message: null, errors: {}, values: {} };
    const [state, formAction] = useActionState(createInvoice, initialState);
 
-   console.log("state values:", state.values);
+   // console.log("state values:", state.values);
 
    return (
       <form action={formAction}>
@@ -137,6 +137,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                      </div>
                   </div>
                </div>
+               
                <div id="status-error" aria-live="polite" aria-atomic="true">
                   {state.errors?.status &&
                      state.errors?.status.map((error: string) => (
