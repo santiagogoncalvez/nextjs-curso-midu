@@ -29,7 +29,7 @@ export default function LoginForm() {
                to { transform: rotate(360deg); }
             }
             .spin-custom {
-               animation: nativeSpin 0.8s linear infinite !important;
+               animation: nativeSpin 1s linear infinite !important;
                display: inline-block;
             }
          `}</style>
