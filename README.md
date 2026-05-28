@@ -47,11 +47,3 @@ A diferencia del flujo básico de la guía inicial, este repositorio consolida e
 * **`/dashboard/invoices`**: Panel CRUD completo para facturas con búsqueda integrada, paginación dinámica y manejo de errores mediante `error.tsx` y `not-found.tsx`.
 * **`/dashboard/customers`**: Sección extendida (fuera del roadmap inicial del video) adaptando la arquitectura de tablas y Skeletons personalizados.
 * **`/login`**: Formulario de acceso robusto con feedback visual interactivo.
-
----
-
-## 🚀 Instalación y Desarrollo
-
-1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
